@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
+        <div className='mt-6'>
+            <footer className="px-16 footer p-10 bg-base-300 text-base-content">
                 <div>
                     <img src={logo} alt="" />
                     <p>Toys Factory Ltd.<br />Providing reliable Company since 1992</p>
@@ -32,12 +32,12 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title">Contect Us</span>
-                    <a href=' ' className=" ">Email: toyinfo@gmail.com</a>
-                    <a href=' ' className=" ">Phone: 01230055000</a>
-                    <a href=' ' className=" ">Address: 108-000, Tejgaon I/A, <br /> Dhaka, Bangladesh</a>
+                    <a href=' ' className=" "><strong>Email:</strong> toyinfo@gmail.com</a>
+                    <a href=' ' className=" "><strong>Phone:</strong> 01230055000</a>
+                    <a href=' ' className=" "><strong>Address:</strong> 108-000, Tejgaon I/A, <br /> Dhaka, Bangladesh</a>
                 </div>
             </footer>
-            <p className='text-center p-4 bg-gray-200 font-semibold'>&copy; Copyright 2023. All Rights Reserved by AK_Azad.</p>
+            <p className='text-center p-4 bg-gray-300 font-semibold hover:bg-slate-600 hover:text-white'>&copy; Copyright 2023. All Rights Reserved by AK_Azad.</p>
         </div>
     );
 };
