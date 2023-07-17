@@ -1,0 +1,358 @@
+[
+    {
+      
+      "cars": [
+        {
+          "img": "car1.jpg",
+          "sellerName": "Nissan",
+          "toyName": "Sports Car",
+          "subCategory": "Car",
+          "price": 25,
+          "availableQuantity": 15,
+          "rating": 4.5,
+          "description": "A sleek and fast sports car toy."
+        },
+        {
+          "img": "car1.jpg",
+          "sellerName": "Jomir",
+          "toyName": "Sports Car",
+          "subCategory": "Car",
+          "price": 27,
+          "availableQuantity": 18,
+          "rating": 4.2,
+          "description": "A sleek and fast sports car toy."
+        },
+        {
+          "img": "car1.jpg",
+          "sellerName": "Habib",
+          "toyName": "Sports Car",
+          "subCategory": "Car",
+          "price": 30,
+          "availableQuantity": 20,
+          "rating": 4.0,
+          "description": "A sleek and fast sports car toy."
+        },
+        {
+          "img": "car1.jpg",
+          "sellerName": "Sadi",
+          "toyName": "Sports Car",
+          "subCategory": "Car",
+          "price": 55,
+          "availableQuantity": 35,
+          "rating": 4.6,
+          "description": "A sleek and fast sports car toy."
+        },
+        {
+          "img": "car2.jpg",
+          "sellerName": "Maria",
+          "toyName": "Sports Car",
+          "subCategory": "Car",
+          "price": 40,
+          "availableQuantity": 25,
+          "rating": 4.8,
+          "description": "A sleek and fast sports car toy."
+        },
+        {
+          "img": "car1.jpg",
+          "sellerName": "Jammy",
+          "toyName": "Sports Car",
+          "subCategory": "Car",
+          "price": 23,
+          "availableQuantity": 34,
+          "rating": 4.5,
+          "description": "A sleek and fast sports car toy."
+        },
+        {
+          "img": "car2.jpg",
+          "sellerName": "Fun Toys",
+          "toyName": "Race Car",
+          "subCategory": "Car",
+          "price": 39,
+          "availableQuantity": 19,
+          "rating": 4.2,
+          "description": "A cool race car toy for speed enthusiasts."
+        }
+      ]
+    },
+    {
+      
+      "trucks": [
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Toy Mart",
+          "toyName": "Monster Truck",
+          "subCategory": "Truck",
+          "price": 24.99,
+          "availableQuantity": 5,
+          "rating": 4.2,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Toy Mart",
+          "toyName": "Monster Truck",
+          "subCategory": "Monster Trucks",
+          "price": 24.99,
+          "availableQuantity": 5,
+          "rating": 4.2,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Toy Mart",
+          "toyName": "Monster Truck",
+          "subCategory": "Monster Trucks",
+          "price": 24.99,
+          "availableQuantity": 5,
+          "rating": 4.2,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Toy Mart",
+          "toyName": "Monster Truck",
+          "subCategory": "Monster Trucks",
+          "price": 59,
+          "availableQuantity": 25,
+          "rating": 4.2,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Robin",
+          "toyName": "Monster Truck",
+          "subCategory": "Monster Trucks",
+          "price": 60,
+          "availableQuantity": 27,
+          "rating": 4.5,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Faruk",
+          "toyName": "Monster Truck",
+          "subCategory": "Truck",
+          "price": 70,
+          "availableQuantity": 33,
+          "rating": 4.2,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Naeem",
+          "toyName": "Monster Truck",
+          "subCategory": "Truck",
+          "price": 65,
+          "availableQuantity": 45,
+          "rating": 4.7,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck2.jpg",
+          "sellerName": "Kids Zone",
+          "toyName": "Fire Truck",
+          "subCategory": "Truck",
+          "price": 80,
+          "availableQuantity": 35,
+          "rating": 4.6,
+          "description": "An exciting fire truck toy with lights and sounds."
+        }
+      ]
+    },
+    {
+      
+      "tractors": [
+        {
+          "img": "tractor1.jpg",
+          "sellerName": "ToyLand",
+          "toyName": "Farm Tractor",
+          "subCategory": "Tractor",
+          "price": 60,
+          "availableQuantity": 24,
+          "rating": 4.3,
+          "description": "A fun farm tractor toy for imaginative play."
+        },
+        {
+          "img": "tractor1.jpg",
+          "sellerName": "Shofia",
+          "toyName": "Farm Tractor",
+          "subCategory": "Tractor",
+          "price": 66,
+          "availableQuantity": 29,
+          "rating": 4.3,
+          "description": "A fun farm tractor toy for imaginative play."
+        },
+        {
+          "img": "tractor1.jpg",
+          "sellerName": "Bappy",
+          "toyName": "Farm Tractor",
+          "subCategory": "Tractor",
+          "price": 76,
+          "availableQuantity": 31,
+          "rating": 4.7,
+          "description": "A fun farm tractor toy for imaginative play."
+        },
+        {
+          "img": "tractor1.jpg",
+          "sellerName": "Nahid",
+          "toyName": "Farm Tractor",
+          "subCategory": "Tractor",
+          "price": 54,
+          "availableQuantity": 46,
+          "rating": 4.8,
+          "description": "A fun farm tractor toy for imaginative play."
+        },
+        {
+          "img": "tractor1.jpg",
+          "sellerName": "Mojumder",
+          "toyName": "Farm Tractor",
+          "subCategory": "Tractor",
+          "price": 49,
+          "availableQuantity": 38,
+          "rating": 4.5,
+          "description": "A fun farm tractor toy for imaginative play."
+        },
+        {
+          "img": "tractor1.jpg",
+          "sellerName": "Maharuf",
+          "toyName": "Farm Tractor",
+          "subCategory": "Tractor",
+          "price": 58,
+          "availableQuantity": 29,
+          "rating": 4.6,
+          "description": "A fun farm tractor toy for imaginative play."
+        },
+        {
+          "img": "tractor2.jpg",
+          "sellerName": "Munni",
+          "toyName": "Construction Tractor",
+          "subCategory": "Tractor",
+          "price": 85,
+          "availableQuantity": 36,
+          "rating": 4.0,
+          "description": "A construction tractor toy with moving parts."
+        }
+      ]
+    },
+    {
+      "category": "Cranes",
+      "cranes": [
+        {
+          "img": "crane1.jpg",
+          "sellerName": "Milon",
+          "toyName": "Construction Crane",
+          "subCategory": "Crane",
+          "price": 110,
+          "availableQuantity": 26,
+          "rating": 4.8,
+          "description": "A realistic construction crane toy with moving parts."
+        },
+        {
+          "img": "crane1.jpg",
+          "sellerName": "Milon",
+          "toyName": "Construction Crane",
+          "subCategory": "Crane",
+          "price": 110,
+          "availableQuantity": 26,
+          "rating": 4.8,
+          "description": "A realistic construction crane toy with moving parts."
+        },
+        {
+          "img": "crane1.jpg",
+          "sellerName": "Milon",
+          "toyName": "Construction Crane",
+          "subCategory": "Crane",
+          "price": 110,
+          "availableQuantity": 26,
+          "rating": 4.8,
+          "description": "A realistic construction crane toy with moving parts."
+        },
+        {
+          "img": "crane1.jpg",
+          "sellerName": "Milon",
+          "toyName": "Construction Crane",
+          "subCategory": "Crane",
+          "price": 110,
+          "availableQuantity": 26,
+          "rating": 4.8,
+          "description": "A realistic construction crane toy with moving parts."
+        },
+        {
+          "img": "crane1.jpg",
+          "sellerName": "Amir",
+          "toyName": "Construction Crane",
+          "subCategory": "Crane",
+          "price": 115,
+          "availableQuantity": 30,
+          "rating": 4.2,
+          "description": "A realistic construction crane toy with moving parts."
+        },
+        {
+          "img": "crane2.jpg",
+          "sellerName": "Saddam",
+          "toyName": "Tower Crane",
+          "subCategory": "Crane",
+          "price": 95,
+          "availableQuantity": 29,
+          "rating": 4.0,
+          "description": "A tower crane toy for building tall structures."
+        }
+      ]
+    },
+    {
+      
+      "buses": [
+        {
+          "img": "bus1.jpg",
+          "sellerName": "Fun Toys",
+          "toyName": "City Bus",
+          "subCategory": "Bus",
+          "price": 145,
+          "availableQuantity": 21,
+          "rating": 4.3,
+          "description": "A colorful city bus toy for pretend play."
+        },
+        {
+          "img": "bus1.jpg",
+          "sellerName": "A.Kadir",
+          "toyName": "City Bus",
+          "subCategory": "Bus",
+          "price": 155,
+          "availableQuantity": 37,
+          "rating": 4.7,
+          "description": "A colorful city bus toy for pretend play."
+        },
+        {
+          "img": "bus1.jpg",
+          "sellerName": "Mamun",
+          "toyName": "City Bus",
+          "subCategory": "Bus",
+          "price": 135,
+          "availableQuantity": 19,
+          "rating": 4.8,
+          "description": "A colorful city bus toy for pretend play."
+        },
+        {
+          "img": "bus1.jpg",
+          "sellerName": "Fariya",
+          "toyName": "City Bus",
+          "subCategory": "Bus",
+          "price": 129,
+          "availableQuantity": 32,
+          "rating": 4.7,
+          "description": "A colorful city bus toy for pretend play."
+        },
+        {
+          "img": "bus2.jpg",
+          "sellerName": "Happy Kids",
+          "toyName": "Double Decker Bus",
+          "subCategory": "Bus",
+          "price": 175,
+          "availableQuantity": 38,
+          "rating": 4.6,
+          "description": "A double-decker bus toy for fun adventures."
+        }
+      ]
+    }
+  ]
+  
