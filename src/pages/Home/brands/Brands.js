@@ -15,7 +15,7 @@ import b_logo12 from '../../../assets/brands/b12.JPG';
 const Brands = () => {
     return (
         <div className='my-6 py-4 pb-8 bg-[#eee8e8]'>
-            <h4 className='mx-16 mt-8 mb-3 text-2xl font-bold text-gray-600'>BRANDS</h4>
+            <h4 className='mx-16 mt-8 mb-3 text-2xl font-bold text-gray-600'>OUR BRANDS</h4>
             <div className='grid grid-cols-4 md:grid-cols-12 mx-16'>
                <img src={b_logo} alt="" />
                <img src={b_logo2} alt="" />

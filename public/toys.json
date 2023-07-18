@@ -5,9 +5,10 @@
         {
           "img": "car1.jpg",
           "sellerName": "Nissan",
+          "email": "nissanbd@gmail.com",
           "toyName": "Sports Car",
           "subCategory": "Car",
-          "price": 25,
+          "price": 25.00,
           "availableQuantity": 15,
           "rating": 4.5,
           "description": "A sleek and fast sports car toy."
@@ -15,9 +16,10 @@
         {
           "img": "car1.jpg",
           "sellerName": "Jomir",
+          "email": "jomirbd@gmail.com",
           "toyName": "Sports Car",
           "subCategory": "Car",
-          "price": 27,
+          "price": 27.00,
           "availableQuantity": 18,
           "rating": 4.2,
           "description": "A sleek and fast sports car toy."
@@ -25,9 +27,10 @@
         {
           "img": "car1.jpg",
           "sellerName": "Habib",
+          "email": "habibbd@gmail.com",
           "toyName": "Sports Car",
           "subCategory": "Car",
-          "price": 30,
+          "price": 30.00,
           "availableQuantity": 20,
           "rating": 4.0,
           "description": "A sleek and fast sports car toy."
@@ -35,9 +38,10 @@
         {
           "img": "car1.jpg",
           "sellerName": "Sadi",
+          "email": "sadibd@gmail.com",
           "toyName": "Sports Car",
           "subCategory": "Car",
-          "price": 55,
+          "price": 55.00,
           "availableQuantity": 35,
           "rating": 4.6,
           "description": "A sleek and fast sports car toy."
@@ -45,9 +49,10 @@
         {
           "img": "car2.jpg",
           "sellerName": "Maria",
+          "email": "mariabd@gmail.com",
           "toyName": "Sports Car",
           "subCategory": "Car",
-          "price": 40,
+          "price": 40.00,
           "availableQuantity": 25,
           "rating": 4.8,
           "description": "A sleek and fast sports car toy."
@@ -55,9 +60,10 @@
         {
           "img": "car1.jpg",
           "sellerName": "Jammy",
+          "email": "jammybd@gmail.com",
           "toyName": "Sports Car",
           "subCategory": "Car",
-          "price": 23,
+          "price": 23.00,
           "availableQuantity": 34,
           "rating": 4.5,
           "description": "A sleek and fast sports car toy."
@@ -65,9 +71,10 @@
         {
           "img": "car2.jpg",
           "sellerName": "Fun Toys",
+          "email": "funtoybd@gmail.com",
           "toyName": "Race Car",
           "subCategory": "Car",
-          "price": 39,
+          "price": 39.00,
           "availableQuantity": 19,
           "rating": 4.2,
           "description": "A cool race car toy for speed enthusiasts."
@@ -80,39 +87,43 @@
         {
           "img": "truck1.jpg",
           "sellerName": "Toy Mart",
+          "email": "toymartbd@gmail.com",
           "toyName": "Monster Truck",
           "subCategory": "Truck",
-          "price": 24.99,
+          "price": 290.00,
+          "availableQuantity": 50,
+          "rating": 4.2,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Toy World",
+          "email": "toyworldbd@gmail.com",
+          "toyName": "Monster Truck",
+          "subCategory": "Monster Trucks",
+          "price": 150.00,
+          "availableQuantity": 42,
+          "rating": 4.6,
+          "description": "A rugged and powerful monster truck toy."
+        },
+        {
+          "img": "truck1.jpg",
+          "sellerName": "Hamjah",
+          "email": "hamjahbd@gmail.com",
+          "toyName": "Monster Truck",
+          "subCategory": "Monster Trucks",
+          "price": 195.00,
           "availableQuantity": 5,
           "rating": 4.2,
           "description": "A rugged and powerful monster truck toy."
         },
         {
           "img": "truck1.jpg",
-          "sellerName": "Toy Mart",
+          "sellerName": "Nasim",
+          "email": "nasimbd@gmail.com",
           "toyName": "Monster Truck",
           "subCategory": "Monster Trucks",
-          "price": 24.99,
-          "availableQuantity": 5,
-          "rating": 4.2,
-          "description": "A rugged and powerful monster truck toy."
-        },
-        {
-          "img": "truck1.jpg",
-          "sellerName": "Toy Mart",
-          "toyName": "Monster Truck",
-          "subCategory": "Monster Trucks",
-          "price": 24.99,
-          "availableQuantity": 5,
-          "rating": 4.2,
-          "description": "A rugged and powerful monster truck toy."
-        },
-        {
-          "img": "truck1.jpg",
-          "sellerName": "Toy Mart",
-          "toyName": "Monster Truck",
-          "subCategory": "Monster Trucks",
-          "price": 59,
+          "price": 159.00,
           "availableQuantity": 25,
           "rating": 4.2,
           "description": "A rugged and powerful monster truck toy."
@@ -120,9 +131,10 @@
         {
           "img": "truck1.jpg",
           "sellerName": "Robin",
+          "email": "robinbd@gmail.com",
           "toyName": "Monster Truck",
           "subCategory": "Monster Trucks",
-          "price": 60,
+          "price": 260.00,
           "availableQuantity": 27,
           "rating": 4.5,
           "description": "A rugged and powerful monster truck toy."
@@ -130,9 +142,10 @@
         {
           "img": "truck1.jpg",
           "sellerName": "Faruk",
+          "email": "farukbd@gmail.com",
           "toyName": "Monster Truck",
           "subCategory": "Truck",
-          "price": 70,
+          "price": 270.00,
           "availableQuantity": 33,
           "rating": 4.2,
           "description": "A rugged and powerful monster truck toy."
@@ -140,9 +153,10 @@
         {
           "img": "truck1.jpg",
           "sellerName": "Naeem",
+          "email": "naeembd@gmail.com",
           "toyName": "Monster Truck",
           "subCategory": "Truck",
-          "price": 65,
+          "price": 165.00,
           "availableQuantity": 45,
           "rating": 4.7,
           "description": "A rugged and powerful monster truck toy."
@@ -150,9 +164,10 @@
         {
           "img": "truck2.jpg",
           "sellerName": "Kids Zone",
+          "email": "kidszonbd@gmail.com",
           "toyName": "Fire Truck",
           "subCategory": "Truck",
-          "price": 80,
+          "price": 280.00,
           "availableQuantity": 35,
           "rating": 4.6,
           "description": "An exciting fire truck toy with lights and sounds."
@@ -165,9 +180,10 @@
         {
           "img": "tractor1.jpg",
           "sellerName": "ToyLand",
+          "email": "toylandbd@gmail.com",
           "toyName": "Farm Tractor",
           "subCategory": "Tractor",
-          "price": 60,
+          "price": 360.00,
           "availableQuantity": 24,
           "rating": 4.3,
           "description": "A fun farm tractor toy for imaginative play."
@@ -175,9 +191,10 @@
         {
           "img": "tractor1.jpg",
           "sellerName": "Shofia",
+          "email": "shofiabd@gmail.com",
           "toyName": "Farm Tractor",
           "subCategory": "Tractor",
-          "price": 66,
+          "price": 366.00,
           "availableQuantity": 29,
           "rating": 4.3,
           "description": "A fun farm tractor toy for imaginative play."
@@ -185,9 +202,10 @@
         {
           "img": "tractor1.jpg",
           "sellerName": "Bappy",
+          "email": "bappybd@gmail.com",
           "toyName": "Farm Tractor",
           "subCategory": "Tractor",
-          "price": 76,
+          "price": 476.00,
           "availableQuantity": 31,
           "rating": 4.7,
           "description": "A fun farm tractor toy for imaginative play."
@@ -195,9 +213,10 @@
         {
           "img": "tractor1.jpg",
           "sellerName": "Nahid",
+          "email": "nahidbd@gmail.com",
           "toyName": "Farm Tractor",
           "subCategory": "Tractor",
-          "price": 54,
+          "price": 354.00,
           "availableQuantity": 46,
           "rating": 4.8,
           "description": "A fun farm tractor toy for imaginative play."
@@ -205,9 +224,10 @@
         {
           "img": "tractor1.jpg",
           "sellerName": "Mojumder",
+          "email": "mojumderbd@gmail.com",
           "toyName": "Farm Tractor",
           "subCategory": "Tractor",
-          "price": 49,
+          "price": 449.00,
           "availableQuantity": 38,
           "rating": 4.5,
           "description": "A fun farm tractor toy for imaginative play."
@@ -215,9 +235,10 @@
         {
           "img": "tractor1.jpg",
           "sellerName": "Maharuf",
+          "email": "maharufbd@gmail.com",
           "toyName": "Farm Tractor",
           "subCategory": "Tractor",
-          "price": 58,
+          "price": 458.00,
           "availableQuantity": 29,
           "rating": 4.6,
           "description": "A fun farm tractor toy for imaginative play."
@@ -225,9 +246,10 @@
         {
           "img": "tractor2.jpg",
           "sellerName": "Munni",
+          "email": "munnibd@gmail.com",
           "toyName": "Construction Tractor",
           "subCategory": "Tractor",
-          "price": 85,
+          "price": 285.00,
           "availableQuantity": 36,
           "rating": 4.0,
           "description": "A construction tractor toy with moving parts."
@@ -235,44 +257,48 @@
       ]
     },
     {
-      "category": "Cranes",
+      
       "cranes": [
         {
           "img": "crane1.jpg",
           "sellerName": "Milon",
+          "email": "milonbd@gmail.com",
           "toyName": "Construction Crane",
           "subCategory": "Crane",
-          "price": 110,
+          "price": 110.00,
           "availableQuantity": 26,
           "rating": 4.8,
           "description": "A realistic construction crane toy with moving parts."
         },
         {
           "img": "crane1.jpg",
-          "sellerName": "Milon",
+          "sellerName": "Mehedi",
+          "email": "mehedibd@gmail.com",
           "toyName": "Construction Crane",
           "subCategory": "Crane",
-          "price": 110,
+          "price": 210.00,
           "availableQuantity": 26,
           "rating": 4.8,
           "description": "A realistic construction crane toy with moving parts."
         },
         {
           "img": "crane1.jpg",
-          "sellerName": "Milon",
+          "sellerName": "Nurul",
+          "email": "nurulbd@gmail.com",
           "toyName": "Construction Crane",
           "subCategory": "Crane",
-          "price": 110,
+          "price": 190.00,
           "availableQuantity": 26,
           "rating": 4.8,
           "description": "A realistic construction crane toy with moving parts."
         },
         {
           "img": "crane1.jpg",
-          "sellerName": "Milon",
+          "sellerName": "Mafia",
+          "email": "mafiabd@gmail.com",
           "toyName": "Construction Crane",
           "subCategory": "Crane",
-          "price": 110,
+          "price": 220.00,
           "availableQuantity": 26,
           "rating": 4.8,
           "description": "A realistic construction crane toy with moving parts."
@@ -280,9 +306,10 @@
         {
           "img": "crane1.jpg",
           "sellerName": "Amir",
+          "email": "amirbd@gmail.com",
           "toyName": "Construction Crane",
           "subCategory": "Crane",
-          "price": 115,
+          "price": 115.00,
           "availableQuantity": 30,
           "rating": 4.2,
           "description": "A realistic construction crane toy with moving parts."
@@ -290,9 +317,10 @@
         {
           "img": "crane2.jpg",
           "sellerName": "Saddam",
+          "email": "saddambd@gmail.com",
           "toyName": "Tower Crane",
           "subCategory": "Crane",
-          "price": 95,
+          "price": 395.00,
           "availableQuantity": 29,
           "rating": 4.0,
           "description": "A tower crane toy for building tall structures."
@@ -305,9 +333,10 @@
         {
           "img": "bus1.jpg",
           "sellerName": "Fun Toys",
+          "email": "funtoybd@gmail.com",
           "toyName": "City Bus",
           "subCategory": "Bus",
-          "price": 145,
+          "price": 145.00,
           "availableQuantity": 21,
           "rating": 4.3,
           "description": "A colorful city bus toy for pretend play."
@@ -315,9 +344,10 @@
         {
           "img": "bus1.jpg",
           "sellerName": "A.Kadir",
+          "email": "akadirbd@gmail.com",
           "toyName": "City Bus",
           "subCategory": "Bus",
-          "price": 155,
+          "price": 155.00,
           "availableQuantity": 37,
           "rating": 4.7,
           "description": "A colorful city bus toy for pretend play."
@@ -325,9 +355,10 @@
         {
           "img": "bus1.jpg",
           "sellerName": "Mamun",
+          "email": "mamunbd@gmail.com",
           "toyName": "City Bus",
           "subCategory": "Bus",
-          "price": 135,
+          "price": 135.00,
           "availableQuantity": 19,
           "rating": 4.8,
           "description": "A colorful city bus toy for pretend play."
@@ -335,9 +366,10 @@
         {
           "img": "bus1.jpg",
           "sellerName": "Fariya",
+          "email": "fariyabd@gmail.com",
           "toyName": "City Bus",
           "subCategory": "Bus",
-          "price": 129,
+          "price": 129.00,
           "availableQuantity": 32,
           "rating": 4.7,
           "description": "A colorful city bus toy for pretend play."
@@ -345,9 +377,10 @@
         {
           "img": "bus2.jpg",
           "sellerName": "Happy Kids",
+          "email": "happykidsbd@gmail.com",
           "toyName": "Double Decker Bus",
           "subCategory": "Bus",
-          "price": 175,
+          "price": 275.00,
           "availableQuantity": 38,
           "rating": 4.6,
           "description": "A double-decker bus toy for fun adventures."
