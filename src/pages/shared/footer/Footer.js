@@ -39,7 +39,7 @@ const Footer = () => {
                     <a href=' ' className=" "><strong>Address:</strong> 108-000, Tejgaon I/A, <br /> Dhaka, Bangladesh</a>
                 </div>
             </footer>
-            <p className='text-center p-4 bg-gray-300 font-semibold hover:bg-slate-600 hover:text-white'>&copy; Copyright 2023. All Rights Reserved by AK_Azad.</p>
+            <p className='text-center p-4 bg-gray-400 font-semibold hover:bg-slate-600 hover:text-white'>&copy; Copyright 2023. All Rights Reserved by AK_Azad.</p>
         </div>
     );
 };
