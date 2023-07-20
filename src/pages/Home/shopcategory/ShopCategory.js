@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import Category from './Category';
 
 const ShopCategory = () => {
     const [categories, setCategories] = useState([]);
 
-    useEffect( () => {
+    useEffect(() => {
         fetch('toys.json')
-        .then(res => res.json())
-        .then(data => setCategories(data))
+            .then(res => res.json())
+            .then(data => setCategories(data));
+
     }, []);
 
     return (
-        <div className='mx-16 mt-8'>
-            <h2 className='mb-3 text-4xl font-bold text-gray-500'>Shop By Category</h2>
+        <div className='mx-16 mt-16'>
+            <h2 className='mb-5 text-4xl font-bold text-gray-500'>Shop By Category</h2>
             <div className=''>
-                <p>Shop by Categories: {categories.length}</p>
+                {
+                    categories.map(category => <Category
+                        key={category._id}
+                        category={category}
+                    ></Category>
+                    )
+                }
             </div>
 
         </div>

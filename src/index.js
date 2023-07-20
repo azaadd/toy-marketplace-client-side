@@ -8,6 +8,7 @@ import {
 import router from './routes/Routes';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className='mx-auto'>
