@@ -12,7 +12,7 @@ const Login = () => {
         <div className="hero bg-base-200 w-full">
             <div className="hero-content flex-col w-1/2">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold">Please Login</h1>
+                    <h1 className="text-3xl font-bold">Please Login</h1>
                 </div>
                 <div className="card w-full shadow-2xl bg-base-100">
                     <div className="card-body">
@@ -28,9 +28,7 @@ const Login = () => {
                                     <span className="label-text font-semibold text-lg">Password</span>
                                 </label>
                                 <input type="password" name='password' placeholder="password" className="input input-bordered" required />
-                                <label className="label">
-                                    <a href=" " className="label-text-alt link link-hover font-semibold text-sm">Forgot password?</a>
-                                </label>
+                               
                             </div>
                             <div className="form-control mt-6">
                                 <input className="btn btn-primary font-semibold" type="submit" value="Login" />

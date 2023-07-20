@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext);
 
     const handleRegister = event => {
         event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(name, photo, email, password)
+
+        createUser(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+        })
+        .then(error => {
+            console.log(error)
+        })
+
     }
 
     return (
         <div className="hero bg-base-200 w-full">
             <div className="hero-content flex-col w-1/2">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold">Please Register</h1>
+                    <h1 className="text-3xl font-bold">Please Register</h1>
                 </div>
                 <div className="card w-full shadow-2xl bg-base-100">
                     <div className="card-body">
@@ -24,7 +42,7 @@ const Register = () => {
                             </div>
                             <div className="form-control mb-3">
                                 <label className="label">
-                                    <span className="label-text font-semibold text-lg">Photo Url</span>
+                                    <span className="label-text font-semibold text-lg">Photo URL</span>
                                 </label>
                                 <input type="text" name='photo' placeholder="photo" className="input input-bordered" required />
                             </div>
