@@ -4,11 +4,10 @@ import Category from './Category';
 const ShopCategory = () => {
     const [categories, setCategories] = useState([]);
 
-    useEffect(() => {
+    useEffect( () => {
         fetch('toys.json')
-            .then(res => res.json())
-            .then(data => setCategories(data));
-
+        .then(res => res.json())
+        .then(data => setCategories(data))
     }, []);
 
     return (
@@ -17,8 +16,8 @@ const ShopCategory = () => {
             <div className=''>
                 {
                     categories.map(category => <Category
-                        key={category._id}
-                        category={category}
+                    key={category._id}
+                    category={category}
                     ></Category>
                     )
                 }
