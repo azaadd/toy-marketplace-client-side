@@ -4,16 +4,10 @@ import Rating from 'react-rating';
 
 const Crane = ({ crane }) => {
     const {
-        _id,
         img,
-        sellerName,
-        email,
         toyName,
-        subCategory,
         price,
-        availableQuantity,
         rating,
-        description
     } = crane;
 
     return (

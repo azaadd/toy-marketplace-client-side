@@ -4,16 +4,10 @@ import Rating from 'react-rating';
 
 const Car = ({ car }) => {
     const {
-        _id,
         img,
-        sellerName,
-        email,
         toyName,
-        subCategory,
         price,
-        availableQuantity,
         rating,
-        description
     } = car;
 
     return (

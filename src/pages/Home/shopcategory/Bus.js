@@ -4,16 +4,10 @@ import Rating from 'react-rating';
 
 const Bus = ({bus}) => {
     const {
-        _id,
         img,
-        sellerName,
-        email,
         toyName,
-        subCategory,
         price,
-        availableQuantity,
         rating,
-        description
     } = bus;
 
     return (
