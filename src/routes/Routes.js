@@ -14,10 +14,11 @@ const router = createBrowserRouter([
             path: '/',
             element: <Home></Home>
         },
-        {
-            path: '/view_details',
-            element: <ViewDetails></ViewDetails>
-        },
+        // {
+        //     path: '/view_details/:id',
+        //     element: <ViewDetails></ViewDetails>,
+        //     loader: ({params}) => fetch(`http://localhost:5000/customers/${params.id}`)
+        // },
         {
             path: '/login',
             element: <Login></Login>
