@@ -11,7 +11,7 @@ import outdoorfun7 from '../../../assets/Seesaw 360 Degree.jpg';
 
 const OutdoorFun = () => {
     return (
-        <div className='text-center mx-16 items-center md:flex gap-3'>
+        <div className='text-center mx-16 items-center md:flex gap-3 mt-6'>
 
             <div className='md:w-1/2'>
 

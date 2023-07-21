@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import Rating from 'react-rating';
+import { Link } from 'react-router-dom';
 
 const Car = ({ car }) => {
     const {
@@ -33,7 +34,7 @@ const Car = ({ car }) => {
                         <span className='fs-5 bg-primary-subtle px-3 rounded-5'>{rating}</span>
                     </div>
                     <div className="card-actions">
-                        <button className="btn btn-primary w-64 ml-2 mt-3">View Details</button>
+                        <Link to='/view_details' className="btn btn-primary w-64 ml-2 mt-3">View Details</Link>
                     </div>
                 </div>
             </div>
