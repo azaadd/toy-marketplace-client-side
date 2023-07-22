@@ -8,7 +8,7 @@ const ViewDetails = () => {
 
     const detailData = useLoaderData();
 
-    const { img, sellerName, email, toyName, subCategory, price, availableQuantity, rating, description } = detailData;
+    const { img, sellerName, email, toyName, price, availableQuantity, rating, description } = detailData;
 
     console.log(detailData)
     useEffect(() => {
