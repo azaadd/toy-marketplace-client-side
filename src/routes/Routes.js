@@ -5,6 +5,7 @@ import ViewDetails from "../pages/Home/shopcategory/ViewDetails";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import AllToys from "../pages/AllToys/AllToys";
+import AddToy from "../pages/addToy/AddToy";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
             path: '/view_details/:id',
             element: <ViewDetails></ViewDetails>,
             loader: ({params}) => fetch(`http://localhost:5000/customers/${params.id}`)
+        },
+        {
+            path: '/add_toy',
+            element: <AddToy></AddToy>,
+            // loader: ({params}) => fetch(`http://localhost:5000/customers/${params.id}`)
         },
         {
             path: '/login',
