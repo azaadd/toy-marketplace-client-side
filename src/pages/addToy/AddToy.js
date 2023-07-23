@@ -54,6 +54,7 @@ const AddToy = () => {
             if(data.insertedId){
                 alert('Added your toy successfully')
             }
+            form.reset();
         })
     }
 
