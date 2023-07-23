@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../../assets/car-logo-e.png'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Header = () => {
+
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/all_toys'>All Toys</Link></li>
-        <li><Link to='/add_toy'>Add Toy</Link></li>
-        <li><Link to='/my_toys'>My Toys</Link></li>
+        {
+            user?.email ? <>
+                <li><Link to='/add_toy'>Add Toy</Link></li>
+                <li><Link to='/my_toys'>My Toys</Link></li>
+            </> : <></>
+        }
         <li><Link to='/blog'>Blog</Link></li>
     </>
 
@@ -35,8 +52,12 @@ const Header = () => {
                 </div>
 
                 <div className="navbar-end">
-                    <img className='rounded-full w-14 h-14 bg-slate-300 mr-3' src="{}" alt="" />
-                    <Link to='/login' className="btn hover:bg-primary hover:text-white bg-white text-xl">Login</Link>
+                    {user && <img className='rounded-full w-14 h-14 bg-slate-300 mr-3 hover:[cursor:pointer]' src={user?.photoURL} title={user?.displayName} alt="" />}
+                    {user?.email ?
+                        <Link onClick={handleLogout} className="btn hover:bg-primary hover:text-white bg-white text-xl">LogOut</Link> :
+
+                        <Link to='/login' className="btn hover:bg-primary hover:text-white bg-white text-xl">Login</Link>
+                    }
                 </div>
             </div>
         </div>
