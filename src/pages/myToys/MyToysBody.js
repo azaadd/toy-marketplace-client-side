@@ -2,11 +2,14 @@ import React from 'react';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const MyToysBody = ({seller}) => {
+
+const MyToysBody = ({ seller, handleDelete }) => {
 
     const {
-        _id, name, email, toyname, photo, quantity, price, category
-        } = seller;
+        _id, toyname, photo, quantity, price, category
+    } = seller;
+
+    
 
     return (
         <tbody className='h-36 text-[18px] font-semibold'>
@@ -21,15 +24,16 @@ const MyToysBody = ({seller}) => {
                             </div>
                         </div>
                     </div>
-                </td> 
+                </td>
                 <td>{toyname}</td>
                 <td>{category}</td>
                 <td>$ {price}.00 Only</td>
                 <td>{quantity} PCS</td>
-                
+
                 <th>
                     <Link to='' className="btn bg-green-600 btn-sm text-white hover:bg-gray-400"><FaEdit /> Edit</Link>
-                    <Link to='' className="btn bg-red-600 btn-sm text-white hover:bg-gray-400 ml-1"><FaTrash /> Delete</Link>
+
+                    <Link onClick={() => handleDelete(_id)} to='' className="btn bg-red-600 btn-sm text-white hover:bg-gray-400 ml-1"><FaTrash /> Delete</Link>
                 </th>
             </tr>
 
