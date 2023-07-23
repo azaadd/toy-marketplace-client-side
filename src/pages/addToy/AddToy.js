@@ -1,15 +1,63 @@
 import { Box, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../providers/AuthProvider';
 
+const toyCategory = [
+    {category: 'Car'},
+    {category: 'Truck'},
+    {category: 'Tractor'},
+    {category: 'Crane'},
+    {category: 'Bus'},
+]
 
 const AddToy = () => {
 
-    const [category, setCategory] = React.useState('');
+
+    const {user} = useContext(AuthContext);
+
+    const [category, setCategory] = useState('');
 
     const handleChange = (event) => {
         setCategory(event.target.value);
+        const selectedCategory = toyCategory.find(list => list.category === event.target.value);
     };
+
+
+    const handleAddToy = e => {
+        e.preventDefault();
+
+
+        const form = e.target;
+        const name = form.name.value;
+        const email = user?.email;
+        const toyname = form.toyname.value;
+        const category = form.category.value;
+        const photo = form.photo.value;
+        const quantity = form.quantity.value;
+        const price = form.price.value;
+        const rating = form.rating.value;
+        const description = form.description.value;
+
+        const add = { name, email, toyname, photo, quantity, price, rating, category, description }
+        console.log(add);
+
+        fetch('http://localhost:5000/sellers', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(add)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.insertedId){
+                alert('Added your toy successfully')
+            }
+        })
+    }
+
+
 
     return (
         <div className='mx-16 mb-12 font-semibold'>
@@ -19,7 +67,7 @@ const AddToy = () => {
                 <p>Please fill the form to add your toys</p>
             </div>
 
-            <form>
+            <form onSubmit={handleAddToy}>
                 <p className='mb-2'>Seller info</p>
                 <div className='flex w-full gap-4 mb-5'>
 
@@ -28,14 +76,14 @@ const AddToy = () => {
                             width: '100%'
                         }}
                     >
-                        <TextField required id="outlined-basic" label="Seller Name" name="name" variant="outlined" className='w-full' />
+                        <TextField required id="outlined-basic" label="Seller Name" name="name" defaultValue={user?.displayName} variant="outlined" className='w-full' />
                     </Box>
                     <Box
                         sx={{
                             width: '100%'
                         }}
                     >
-                        <TextField required id="outlined-basic" name="email" label="Seller Email" variant="outlined" className='w-full' />
+                        <TextField type='email' required id="outlined-basic" name="email" defaultValue={user?.email} label="Seller Email" variant="outlined" className='w-full' />
                     </Box>
                 </div>
                 <p className='mb-2'>Toy info</p>
@@ -63,17 +111,20 @@ const AddToy = () => {
                         <InputLabel id="demo-simple-select-label">Category</InputLabel>
                         <Select
                             labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            defaultValue='car'
+                            id="demo-simple-select" required
+                            name='category'
+                            defaultValue={category}
 
                             label="Category"
                             onChange={handleChange}
                         >
-                            <MenuItem name='car' value='car' >Car</MenuItem>
-                            <MenuItem name='truck' value='truck'>Truck</MenuItem>
-                            <MenuItem name='tractor' value='tractor'>Tractor</MenuItem>
-                            <MenuItem name='crane' value='crane'>Crane</MenuItem>
-                            <MenuItem name='bus' value='bus'>Bus</MenuItem>
+                            {
+                                toyCategory.map((list, index) => (
+                                    <MenuItem key={index} value={list.category}>{list.category}</MenuItem>
+                                ))
+                            }
+                            
+                            
                         </Select>
                     </FormControl>
                     <Box
@@ -115,7 +166,8 @@ const AddToy = () => {
 
                 </div>
 
-                <Link to='' className='btn w-full text-center bg-blue-700 p-2 rounded text-white hover:bg-blue-400'>Add Toy</Link>
+                
+                <input className='btn w-full text-center bg-blue-700 p-2 rounded text-white hover:bg-blue-400 level' type="submit" value="Add Toy" />
 
             </form>
 
