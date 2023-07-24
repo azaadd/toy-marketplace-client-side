@@ -1,0 +1,27 @@
+import React from 'react';
+
+const Blog = () => {
+    return (
+        <div className=''>
+            <div className='my-8'>
+                <h4 className='text-3xl font-semibold bg-gray-100 px-16 py-3'><span className='underline'>01. Questions:</span> What is an access token and refresh token? How do they work and where should we store them on the client-side?</h4>
+                <blockquote className='bg-[#ddd] ml-16 pl-8 pr-8 py-6 border-l-4 border-green-400'><em><p className='text-xl '><span className='font-semibold'>Answer:</span> An access_token which is used to authenticate oneself with a resource. Access tokens to ensure a user has access to the appropriate resources, and these access tokens typically have a limited lifetime. Limiting the lifetime of the access token limits the amount of time an attacker can use a stolen token. <br /> <br /> A refresh_token, which is used purely to create a new access_token. When access tokens expire or become invalid but the application still needs to access a protected resource, the application faces the problem of getting a new access token without forcing the user to once again grant permission. To solve this problem called a refresh token. <br /> <br />Access token and refresh token shouldn't be stored in the local/session storage, because they are not a place for any sensitive data. Hence I would store the access token in a httpOnly cookie (even though there is CSRF) and I need it for most of my requests to the Resource Server anyway.</p></em></blockquote>
+            </div>
+            <div className='my-8'>
+                <h4 className='text-3xl font-semibold bg-gray-100 px-16 py-3'><span className='underline'>02. Questions:</span> Compare SQL and NoSQL databases?</h4>
+                <blockquote className='bg-[#ddd] ml-16 pl-8 pr-8 py-6 border-l-4 border-green-400'><em><p className='text-xl '><span className='font-semibold'>Answer:</span> Structured Query Language (SQL) is a programming language that allows both technical and non-technically-minded users to query, manipulate, and change data in a relational database.Organized into columns and rows within a table, SQL databases use a relational model that work best with well-defined structured data. Within a SQL database, tables are linked through "foreign keys" that form relations between different tables and fields. SQL databases are scalable vertically, meaning that you can increase the maximum load by adding further storage components like RAM or SSD. <br /> <br />NoSQL databases are non-relational databases that store data in a manner other than the tabular relations used within SQL databases. While SQL databases are best used for structured data, NoSQL databases are suitable for structured, semi-structured, and unstructured data. As a result, NoSQL databases don't follow a rigid schema but instead have more flexible structures to accommodate their data-types. Furthermore, instead of using SQL to query the database, NoSQL databases use varying query languages.</p></em></blockquote>
+            </div>
+            <div className='my-8'>
+                <h4 className='text-3xl font-semibold bg-gray-100 px-16 py-3'><span className='underline'>03. Questions:</span> What is express js? What is Nest JS ?</h4>
+                <blockquote className='bg-[#ddd] ml-16 pl-8 pr-8 py-6 border-l-4 border-green-400'><em><p className='text-xl '><span className='font-semibold'>Answer:</span> Express.js is a small framework that works on top of Node.js web server functionality to simplify its APIs and add helpful new features. It makes it easier to organize your application’s functionality with middleware and routing. It adds helpful utilities to Node.js HTTP objects and facilitates the rendering of dynamic HTTP objects. <br /> <br />NestJS is a framework for building efficient, scalable Node.js web applications. It uses modern JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Programming). It is known for producing highly testable, maintainable, and scalable applications using modern JavaScript and TypeScript.</p></em></blockquote>
+            </div>
+            <div className='my-8'>
+                <h4 className='text-3xl font-semibold bg-gray-100 px-16 py-3'><span className='underline'>04. Questions:</span> What is MongoDB aggregate and how does it work?</h4>
+                <blockquote className='bg-[#ddd] ml-16 pl-8 pr-8 py-6 border-l-4 border-green-400'><em><p className='text-xl '><span className='font-semibold'>Answer:</span> Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. The stages make up what is known as a pipeline. The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline.
+                <br /> <br />Aggregation operations process data records and return computed results.Not only do we have the ability to aggregate data on the client side with JavaScript, but we can use MongoDB to run operations on the server against our collections stored in the database before the result is returned to the client.</p></em></blockquote>
+            </div>
+        </div>
+    );
+};
+
+export default Blog;

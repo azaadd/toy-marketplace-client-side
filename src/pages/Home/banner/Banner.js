@@ -19,8 +19,8 @@ const Banner = () => {
                         <a href="#slide2" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❯</a>
 
                     </div>
-                    <div className="absolute flex items-center left-1/4 bottom-1/4 top-3/4">
-                        <h1 className='text-7xl font-bold text-zinc-400'>Choose your favorite toy</h1>
+                    <div className="absolute flex items-center left-1/4 bottom-2 top-3/4">
+                        <h1 className='text-7xl font-bold text-red-500'>Choose your favorite toy</h1>
                     </div>
 
                 </div>
@@ -30,8 +30,8 @@ const Banner = () => {
                         <a href="#slide1" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❮</a>
                         <a href="#slide3" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❯</a>
                     </div>
-                    <div className="absolute flex items-center left-1/4 bottom-1/4 top-3/4">
-                        <h1 className='text-7xl font-bold text-zinc-400'>Choose your favorite toy</h1>
+                    <div className="absolute flex items-center left-1/4 bottom-2 top-3/4">
+                        <h1 className='text-7xl font-bold text-red-500'>Choose your favorite toy</h1>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
@@ -40,8 +40,8 @@ const Banner = () => {
                         <a href="#slide2" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❮</a>
                         <a href="#slide4" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❯</a>
                     </div>
-                    <div className="absolute flex items-center left-1/4 bottom-1/4 top-3/4">
-                        <h1 className='text-7xl font-bold text-zinc-400'>Choose your favorite toy</h1>
+                    <div className="absolute flex items-center left-1/4 bottom-2 top-3/4">
+                        <h1 className='text-7xl font-bold text-red-500'>Choose your favorite toy</h1>
                     </div>
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
@@ -50,8 +50,8 @@ const Banner = () => {
                         <a href="#slide3" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❮</a>
                         <a href="#slide5" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❯</a>
                     </div>
-                    <div className="absolute flex items-center left-1/4 bottom-1/4 top-3/4">
-                        <h1 className='text-7xl font-bold text-zinc-400'>Choose your favorite toy</h1>
+                    <div className="absolute flex items-center left-1/4 bottom-2 top-3/4">
+                        <h1 className='text-7xl font-bold text-red-500'>Choose your favorite toy</h1>
                     </div>
                 </div>
                 <div id="slide5" className="carousel-item relative w-full">
@@ -60,8 +60,8 @@ const Banner = () => {
                         <a href="#slide4" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❮</a>
                         <a href="#slide1" className="btn btn-circle text-2xl bg-base-300 hover:bg-gray-400 hover:text-white">❯</a>
                     </div>
-                    <div className="absolute flex items-center left-1/4 bottom-1/4 top-3/4">
-                        <h1 className='text-7xl font-bold text-zinc-400'>Choose your favorite toy</h1>
+                    <div className="absolute flex items-center left-1/4 bottom-2 top-3/4">
+                        <h1 className='text-7xl font-bold text-red-500'>Choose your favorite toy</h1>
                     </div>
                 </div>
             </div>
