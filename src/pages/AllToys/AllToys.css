@@ -1,0 +1,12 @@
+.selected{
+    background: #4a07da;
+    color: #ffffff;   
+}
+
+.pagination button{
+    padding: 8px 24px;
+    border-radius: 7px;
+    border: 1px solid #4a07da;
+    margin-right: 8px;
+}
+/* btn btn-outline btn-primary mr-2 px-6  */
