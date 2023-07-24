@@ -1,19 +1,20 @@
 import { Box, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const toyCategory = [
-    {category: 'Car'},
-    {category: 'Truck'},
-    {category: 'Tractor'},
-    {category: 'Crane'},
-    {category: 'Bus'},
+    { category: 'Car' },
+    { category: 'Truck' },
+    { category: 'Tractor' },
+    { category: 'Crane' },
+    { category: 'Bus' },
 ]
 
 const AddToy = () => {
 
 
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
 
     const [category, setCategory] = useState('');
 
@@ -41,21 +42,39 @@ const AddToy = () => {
         const add = { name, email, toyname, photo, quantity, price, rating, category, description }
         console.log(add);
 
-        fetch('http://localhost:5000/sellers', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(add)
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You want to add it!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, add it!'
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data.insertedId){
-                alert('Added your toy successfully')
-            }
-            form.reset();
-        })
+            .then((result) => {
+                if (result.isConfirmed) {
+
+                    fetch('http://localhost:5000/sellers', {
+                        method: 'POST',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(add)
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data);
+                            if (data.insertedId) {
+                                Swal.fire(
+                                    'Added!',
+                                    'Your Toy has been added successfully.',
+                                    'success'
+                                )
+                            }
+                            form.reset();
+                        })
+                }
+            })
     }
 
 
@@ -124,8 +143,8 @@ const AddToy = () => {
                                     <MenuItem key={index} value={list.category}>{list.category}</MenuItem>
                                 ))
                             }
-                            
-                            
+
+
                         </Select>
                     </FormControl>
                     <Box
@@ -167,7 +186,7 @@ const AddToy = () => {
 
                 </div>
 
-                
+
                 <input className='btn w-full text-center bg-blue-700 p-2 rounded text-white hover:bg-blue-400 level' type="submit" value="Add Toy" />
 
             </form>

@@ -31,7 +31,7 @@ const MyToysBody = ({ seller, handleDelete }) => {
                 <td>{quantity} PCS</td>
 
                 <th>
-                    <Link to='' className="btn bg-green-600 btn-sm text-white hover:bg-gray-400"><FaEdit /> Edit</Link>
+                    <Link to={`/update/${_id}`} className="btn bg-green-600 btn-sm text-white hover:bg-gray-400"><FaEdit /> Edit</Link>
 
                     <Link onClick={() => handleDelete(_id)} to='' className="btn bg-red-600 btn-sm text-white hover:bg-gray-400 ml-1"><FaTrash /> Delete</Link>
                 </th>
