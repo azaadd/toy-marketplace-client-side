@@ -54,7 +54,7 @@ const AddToy = () => {
             .then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch('http://localhost:5000/sellers', {
+                    fetch('https://b7a11-toy-marketplace-server-side-chi.vercel.app/sellers', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

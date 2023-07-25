@@ -25,19 +25,19 @@ const router = createBrowserRouter([
         {
             path: '/all_toys',
             element: <AllToys></AllToys>,
-            loader: () => fetch('http://localhost:5000/customers'),
+            loader: () => fetch('https://b7a11-toy-marketplace-server-side-chi.vercel.app/customers'),
             
         } ,
         {
             path: '/all_toys',
             element: <AllToys></AllToys>,
-            loader: () => fetch('http://localhost:5000/totalProducts'),
+            loader: () => fetch('https://b7a11-toy-marketplace-server-side-chi.vercel.app/totalProducts'),
             
         } ,
         {
             path: '/view_details/:id',
             element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/customers/${params.id}`)
+            loader: ({params}) => fetch(`https://b7a11-toy-marketplace-server-side-chi.vercel.app/customers/${params.id}`)
         },
         {
             path: '/add_toy',
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         {
             path: '/update/:id',
             element: <UpdateToy></UpdateToy>,
-            loader: ({params}) => fetch(`http://localhost:5000/sellers/${params.id}`)
+            loader: ({params}) => fetch(`https://b7a11-toy-marketplace-server-side-chi.vercel.app/sellers/${params.id}`)
         },
         {
             path: '/blog',

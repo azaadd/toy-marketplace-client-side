@@ -37,7 +37,7 @@ const MyToys = () => {
 
     
 
-    const url = `http://localhost:5000/sellers?email=${user?.email}`;
+    const url = `https://b7a11-toy-marketplace-server-side-chi.vercel.app/sellers?email=${user?.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -61,7 +61,7 @@ const MyToys = () => {
             .then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch(`http://localhost:5000/sellers/${id}`, {
+                    fetch(`https://b7a11-toy-marketplace-server-side-chi.vercel.app/sellers/${id}`, {
                         method: 'DELETE'
                     })
                         .then(res => res.json())

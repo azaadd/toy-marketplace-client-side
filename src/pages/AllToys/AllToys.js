@@ -11,7 +11,7 @@ const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
     
     // useEffect(() => {
-    //     fetch('http://localhost:5000/customers')
+    //     fetch('https://b7a11-toy-marketplace-server-side-chi.vercel.app/customers')
     //     .then(res => res.json())
     //     .then(data => setAllToys(data))
     // }, [] );
@@ -19,7 +19,7 @@ const AllToys = () => {
 
     useEffect(() => {
         async function fetchData () {
-            const response = await fetch(`http://localhost:5000/customers?page=${currentPage}&limit=${itemsPerPage}`);
+            const response = await fetch(`https://b7a11-toy-marketplace-server-side-chi.vercel.app/customers?page=${currentPage}&limit=${itemsPerPage}`);
             const data = await response.json();
             setAllToys(data);
         }

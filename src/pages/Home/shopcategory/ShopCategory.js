@@ -16,7 +16,7 @@ const ShopCategory = () => {
     const [filteredCategories, setFilteredCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/customers')
+        fetch('https://b7a11-toy-marketplace-server-side-chi.vercel.app/customers')
             .then(res => res.json())
             .then(data => {
                 setCategories(data);

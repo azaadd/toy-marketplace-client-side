@@ -59,7 +59,7 @@ const UpdateToy = () => {
             .then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch(`http://localhost:5000/sellers/${_id}`, {
+                    fetch(`https://b7a11-toy-marketplace-server-side-chi.vercel.app/sellers/${_id}`, {
                         method: 'PUT',
                         headers: {
                             'content-type': 'application/json'
