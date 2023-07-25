@@ -23,7 +23,7 @@ const Category = ({ toy }) => {
             <div className="card-body items-start text-start px-3">
                 <h2 className="card-title">{toyName}</h2>
                 <p className='font-semibold'>Price: $ {price}</p>
-                <div className='flex items-center font-semibold'>
+                <div className='md:flex items-center font-semibold'>
                     <p className='mr-6'>Ratings: </p>
                     <Rating
 
@@ -35,8 +35,8 @@ const Category = ({ toy }) => {
                     ></Rating>
                     <span className='fs-5 bg-primary-subtle px-3 rounded-5'>{rating}</span>
                 </div>
-                <div className="card-actions">
-                    <Link to={`/view_details/${_id}`} className="btn btn-primary w-64 ml-2 mt-3">View Details</Link>
+                <div className="card-actions mx-auto">
+                    <Link to={`/view_details/${_id}`} className="btn btn-primary md:w-64  mt-3 sm:w-40  items-center">View Details</Link>
                 </div>
             </div>
         </div>
