@@ -27,6 +27,6 @@ This project was tailwind and daisyUi with Create React App.
 * There is some validation in register page like password must be at least six character long and email and password field can't be empty.
 
 ### Live Site Link
-##: https://toy-marketplace-ba637.web.app
+##: https://the-toy-market.web.app/
 
 
